@@ -17,6 +17,21 @@ The repository currently uses the `main` branch and the prototype entry point is
 
 This repository is private. GitHub Pages availability and visitor access depend on the repository owner's GitHub plan and Pages settings. Do not put real customer data in this demo.
 
+## Wheel design alignment
+
+The prototype UI has been updated using Wheel Foundation semantic values inspected through Figma MCP:
+
+- Page background: `alias color/background/faded` (`#f0f3f5`)
+- Surface: `alias color/background/default` (`#ffffff`)
+- Main content: `alias color/content/default` (`#111827`)
+- Secondary content: `alias color/content/neutral` (`#4b5563`)
+- Primary action: `alias color/content/accent` / `alias color/background/accent` (`#2463eb`)
+- Borders: `alias color/border/default` and `alias color/border/strong`
+- Typography: Inter; operational UI uses 14px/20px body sizing
+- Spacing follows the Wheel scale (4, 8, 12, 16, 24, 32px); controls and surfaces use compact 6–12px radii.
+
+This is a standalone HTML prototype. Its controls are coded in HTML/CSS and are visually aligned to Wheel rules; they are not live Figma component instances or React components from a Wheel code package. The Spa-specific workflows and information architecture remain tailored to booking operations.
+
 ## Prototype scope
 
 Today workspace, appointment calendar and list, booking creation and rescheduling, customer profiles, services and packages, staff/resources, service status transitions, checkout, package-session deduction, transactions, and sample reports.
